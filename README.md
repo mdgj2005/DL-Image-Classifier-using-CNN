@@ -43,7 +43,7 @@ Optionally, display a confusion matrix or sample predictions.
 ### Register Number: 212223040049
 
 ```python
-import torch
+iimport torch
 import torch.nn as nn
 import torch.optim as optim
 import torchvision
@@ -110,8 +110,8 @@ if torch.cuda.is_available():
     model.to(device)
 
 # Print model summary
-print('Name: HARIHARAN J')
-print('Register Number: 212223240047')
+print('Name: M.GOKUL ANAND')
+print('Register Number: 2122233040049')
 summary(model, input_size=(1, 28, 28))
 
 # Initialize model, loss function, and optimizer
@@ -138,8 +138,8 @@ def train_model(model, train_loader, num_epochs=10):
             loss.backward()
             optimizer.step()
             running_loss += loss.item()
-        print('Name: HARIHARAN J')
-        print('Register Number: 212223240047')
+       print('Name: M.GOKUL ANAND')
+      print('Register Number: 2122233040049')
         print(f'Epoch [{epoch+1}/{num_epochs}], Loss: {running_loss/len(train_loader):.4f}')
 
 # Train the model
@@ -181,8 +181,8 @@ def test_model(model, test_loader):
     plt.title('Confusion Matrix')
     plt.show()
     # Print classification report
-    print('Name: HARIHARAN J')
-    print('Register Number: 212223240047')
+    print('Name: M.GOKUL ANAND')
+    print('Register Number: 2122233040049')
     print("Classification Report:")
     print(classification_report(all_labels, all_preds, target_names=[str(i) for i in range(10)]))
 
@@ -202,8 +202,8 @@ def predict_image(model, image_index, dataset):
 
     class_names = [str(i) for i in range(10)]
 
-    print('Name: HARIHARAN J')
-    print('Register Number: 212223240047')
+    print('Name: M.GOKUL ANAND')
+    print('Register Number: 2122233040049')
     plt.imshow(image.cpu().squeeze(), cmap="gray")
     plt.title(f'Actual: {class_names[label]}\nPredicted: {class_names[predicted.item()]}')
     plt.axis("off")
@@ -213,6 +213,8 @@ def predict_image(model, image_index, dataset):
 # Example Prediction
 predict_image(model, image_index=80, dataset=test_dataset)
 ```
+
+
 
 ### OUTPUT
 
